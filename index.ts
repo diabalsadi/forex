@@ -4,7 +4,7 @@ import express = require("express");
 import { Wallet } from "./models/wallet";
 import { Ticker } from "./models/ticker";
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 const app = express();
 
 const wallet = new Wallet();
