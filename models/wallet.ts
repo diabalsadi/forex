@@ -8,7 +8,6 @@ export class Wallet {
   }
 
   addTicker(ticker: Ticker) {
-    ticker.scrapePrice();
     this.tickers.push(ticker);
   }
 
